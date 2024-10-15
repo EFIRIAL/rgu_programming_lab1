@@ -1,0 +1,3 @@
+C:/Users/Sirgay/CLionProjects/16octLAB/cmake-build-debug/CMakeFiles/16octLAB.dir
+C:/Users/Sirgay/CLionProjects/16octLAB/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Sirgay/CLionProjects/16octLAB/cmake-build-debug/CMakeFiles/rebuild_cache.dir
