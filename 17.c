@@ -39,4 +39,4 @@ char *catstr(char a[], char b[], char res[]){
     res[i] = '\0';
     return res;
 }
- */
+*/

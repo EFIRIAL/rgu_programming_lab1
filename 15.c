@@ -17,11 +17,12 @@ int main(){
     }
     int s = len - d - a;
     char digits[d];
+    char *ptr = str;
     i = 0;
     int i1 = 0;
-    while(str[i] != '\0') {
+    while(*(ptr + i) != '\0') {
         if (digit(str[i])) {
-            digits[i1] = str[i];
+            digits[i1] = *(ptr + i);
             i1++;
         }
         i++;
@@ -30,9 +31,9 @@ int main(){
     char bukvs[a];
     i = 0;
     int i2 = 0;
-    while(str[i] != '\0'){
+    while(*(ptr + i) != '\0'){
         if(isalpha(str[i])){
-            bukvs[i2] = str[i];
+            bukvs[i2] = *(ptr + i);
             i2++;
         }
         i++;
@@ -40,9 +41,9 @@ int main(){
     char other[s];
     i = 0;
     int i3 = 0;
-    while(str[i] != '\0'){
+    while(*(ptr + i) != '\0'){
         if(!isalpha(str[i]) && !digit(str[i])){
-            other[i3] = str[i];
+            other[i3] = *(ptr + i);
             i3++;
         }
         i++;

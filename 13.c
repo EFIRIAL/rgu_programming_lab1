@@ -1,5 +1,4 @@
 /*
-//Преобразование элементов на нечетных позициях(или индексах?) в верхний регистр
 #include <stdio.h>
 #include <ctype.h>
 int nemain();
@@ -13,7 +12,7 @@ int main(){
         ptr += 2;
     }
     printf("%s\n", str);
-    //nemain();
+    nemain();
     return 0;
 }
 

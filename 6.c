@@ -33,7 +33,8 @@ void minor(int stroka, int stolbec, int n, int matrix[n][n], int result[n-1][n-1
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){
             if(i != stroka && j != stolbec){
-                result[a][b++] = matrix[i][j];
+                result[a][b] = matrix[i][j];
+                b++;
                 if(b == n - 1) {
                     b = 0;
                     a++;
@@ -44,9 +45,8 @@ void minor(int stroka, int stolbec, int n, int matrix[n][n], int result[n-1][n-1
 }
 
 int determinant(int n, int mat[n][n]){
-    if(n == 1){
+    if(n == 1)
         return mat[0][0];
-    }
     if(n == 2)
         return mat[0][0]*mat[1][1]-mat[0][1]*mat[1][0];
     int det = 0;
