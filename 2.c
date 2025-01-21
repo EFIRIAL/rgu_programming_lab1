@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 int main(){
     char s[] = "bal siht gniod etah I";
@@ -12,4 +11,3 @@ int main(){
     }
     printf("%s", s);
 }
-*/

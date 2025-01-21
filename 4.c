@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 #include <stdlib.h>
 int max(int arr[], int n);
@@ -53,6 +52,6 @@ int id(int a,int arr[], int len) {
     printf("There is no such variables in this array");
     return -1;
 }
-*/
+
 
 

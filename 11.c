@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 #include <string.h>
 
@@ -19,4 +18,3 @@ int lenstr(char s[]){
         l += 1;
     return l;
 }
-*/

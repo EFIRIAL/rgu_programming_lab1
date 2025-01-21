@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 void minor(int stroka, int stolbec, int n, int matrix[n][n], int result[n-1][n-1]);
 int determinant(int n, int mat[n][n]);
@@ -100,4 +99,3 @@ int inverse(int n, int mat[n][n], float inv[n][n]) {
             inv[i][j] = (float)al[i][j] * 1/det;
     return 1;
 }
-*/

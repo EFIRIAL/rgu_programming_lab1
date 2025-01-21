@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 #include <ctype.h>
 int nemain();
@@ -29,4 +28,4 @@ int nemain(){
     printf("%s", str);
     return 0;
 }
-*/
+

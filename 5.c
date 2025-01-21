@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 void sort(int arr[], int len);
 int binary(int arr[], int len, int isk);
@@ -47,4 +46,4 @@ int binary(int arr[], int len, int isk) {
     }
     return -1;
 }
-*/
+

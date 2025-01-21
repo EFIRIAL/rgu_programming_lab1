@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 #include <ctype.h>
 int digit(char a);
@@ -87,4 +86,3 @@ void sort(char arr[], int len) {
         }
     }
 }
-*/

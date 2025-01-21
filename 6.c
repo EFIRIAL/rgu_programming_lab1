@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 
 void minor(int stroka, int stolbec, int n, int matrix[n][n], int result[n-1][n-1]);
@@ -59,4 +58,3 @@ int determinant(int n, int mat[n][n]){
     }
     return det;
 }
-*/

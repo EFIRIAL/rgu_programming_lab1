@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 #include <math.h>
 
@@ -51,4 +50,3 @@ int id(char a[], char b, int len){
     if(a[j] == b)
         return j;
 }
-*/

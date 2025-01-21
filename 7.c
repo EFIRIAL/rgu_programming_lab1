@@ -1,6 +1,5 @@
-/*
 #include <stdio.h>
-int nemain();
+void nemain();
 
 int main(){
     int arr[] = {1, 12, 4, 5, 63, 9, 8, 10, 22, 14};
@@ -18,7 +17,7 @@ int main(){
     return 0;
 }
 
-int nemain(){
+void nemain(){
     int arr[] = {1, 12, 4, 5, 63, 9, 8, 10, 22, 14};
     int len_arr = sizeof(arr)/sizeof(arr[0]);
     int len_n = len_arr / 2;                //по нечетным местам
@@ -31,4 +30,3 @@ int nemain(){
     for(int i = 0; i < len_n; i++)
         printf("%d ", new[i]);
 }
-*/

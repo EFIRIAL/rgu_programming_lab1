@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 #include <string.h>
 
@@ -23,4 +22,3 @@ char *rtsrts(char a[], char b[]){
     }
     return NULL;
 }
-*/

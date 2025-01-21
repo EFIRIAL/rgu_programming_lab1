@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 int main(){
     int str1, stc1;
@@ -63,4 +62,3 @@ int main(){
         }
     }
 }
-*/

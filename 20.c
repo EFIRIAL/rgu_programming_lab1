@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 
 int cc(int a, int b, char res[]);
@@ -30,4 +29,3 @@ int cc(int a, int b, char res[]){
     res[i] = '\0';
     return i;
 }
-*/

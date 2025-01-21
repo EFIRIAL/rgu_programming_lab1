@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 void change_values(int *a, int *b);
 
@@ -18,4 +17,3 @@ void change_values(int *a, int *b){
     *a = *b;
     *b = temp;
 }
-*/

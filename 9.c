@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 void sort(double arr[], int len);
 
@@ -39,4 +38,3 @@ void sort(double arr[], int len) {
         }
     }
 }
-*/

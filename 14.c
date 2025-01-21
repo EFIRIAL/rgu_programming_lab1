@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 
 int max(int arr[], int len);
@@ -35,4 +34,3 @@ int min(int arr[], int len){
     }
     return min;
 }
-*/

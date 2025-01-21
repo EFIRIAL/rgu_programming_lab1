@@ -1,4 +1,3 @@
-/*
 #include <stdio.h>
 int main(){
     int arr[] = {1, 12 ,6, 7, 74, 5, 33, 11, 28, 9, 67, 81};
@@ -19,4 +18,3 @@ int main(){
     for(int i = 0; i < count; i++)
         printf("%d ", new[i]);
 }
-*/
