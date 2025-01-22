@@ -7,6 +7,10 @@ int main(){
     int n;
     printf("Enter size of matrix: ");
     scanf("%d", &n);
+    if(n <= 0){
+        printf("Uncorrect value");
+        return 1;
+    }
     int matrix[n][n];
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){

@@ -1,15 +1,22 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define LENGTH 15
 void sort(int arr[], int len);
 int binary(int arr[], int len, int isk);
 
 int main(){
-    int arr[] = {1, 23, 5, 3, 10, 12, 8, 74, 81};
-    int len = sizeof(arr)/sizeof(arr[0]);
+    srand(time(NULL));
+    int len = LENGTH;
+    int arr[LENGTH];
+    int isk;
+    for(int i = 0; i < len; i++){
+        arr[i] = rand()%100;
+    }
     sort(arr, len);
     printf("Array: ");
     for(int i = 0; i < len; i++)
         printf("%d ", arr[i]);
-    int isk;
     printf("\nEnter value to find it: ");
     scanf("%d", &isk); //вводим искомое число
     int id_isk = binary(arr, len, isk);

@@ -3,8 +3,16 @@ int main(){
     int n, m;
     printf("Enter amount of strok: ");
     scanf("%d", &n);
+    if(n <= 0){
+        printf("Uncorrect value");
+        return 1;
+    }
     printf("Enter amount of stolbcov: ");
     scanf("%d", &m);
+    if(m <= 0){
+        printf("Uncorrect value");
+        return 1;
+    }
     int matrix[n][m];
     for(int i = 0; i < n; i++){
         for(int j = 0; j < m; j++){
@@ -12,7 +20,7 @@ int main(){
             scanf("%d", &matrix[i][j]);
         }
     }
-    printf("Matrix: \n");
+    printf("\nMatrix: \n");
     for(int i = 0; i < n; i++){
         for(int j = 0; j < m; j++){
             printf("%d ", matrix[i][j]);
@@ -20,6 +28,7 @@ int main(){
                 printf("\n");
         }
     }
+    printf("\n");
     int new_matrix[m][n];
     for(int i = 0; i < m; i++){
         for(int j = 0; j < n; j++){

@@ -2,18 +2,31 @@
 
 int max(int arr[], int len);
 int min(int arr[], int len);
-
 int main(){
-    int arr[10];
-    FILE *file = fopen("array.txt", "r");
+    int count = 0;
+    FILE *file = fopen("C:/Users/Sirgay/CLionProjects/16octlab/txt/array.txt", "r");
     if(file == NULL){
-        printf("error");
+        printf("Open error");
         return 0;
     }
-    for(int i = 0; i < 10; i++)
+    int temp;
+    while (fscanf(file, "%d", &temp) == 1) {
+        count++;
+    }
+    if(count == 0){
+        printf("File is empty");
+        fclose(file);
+        return 1;
+    }
+    int arr[count];
+    rewind(file);
+    for(int i = 0; i < count; i++)
         fscanf(file, "%d", &arr[i]);
-    printf("Min value of array is %d\n", min(arr, 10));
-    printf("Max value of array is %d", max(arr, 10));
+    printf("Array:\n");
+    for(int i = 0; i < count; i++)
+        printf("%d ", arr[i]);
+    printf("\nMin value of array is %d\n", min(arr, count));
+    printf("Max value of array is %d", max(arr, count));
     fclose(file);
     return 0;
 }

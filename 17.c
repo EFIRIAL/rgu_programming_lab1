@@ -7,16 +7,8 @@ int main(){
     char str1[] = "Hello ";
     char str2[] = "world!";
     //printf("%s\n", strcat(str1, str2));
-    int len = 0, i = 0, j = 0;
-    while(str1[i] != '\0'){
-        len += 1;
-        i++;
-    }
-    while(str2[j] != '\0'){
-        len += 1;
-        j++;
-    }
-    char res[len+1];
+    int len = strlen(str1) + strlen(str2)+1;
+    char res[len];
     catstr(str1, str2, res);
     printf("%s", res);
     return 0;

@@ -4,7 +4,7 @@
 int lenstr(char s[]);
 
 int main(){
-    char s[] = "A B C D E F";
+    char s[] = "0123456789";
     unsigned long long len1 = strlen(s);
     printf("%llu ", len1);
     int len2 = lenstr(s);

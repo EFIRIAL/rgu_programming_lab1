@@ -8,6 +8,10 @@ int main(){
     int n;
     printf("Enter size of matrix:");
     scanf("%d", &n);
+    if(n <= 0){
+        printf("Uncorrect value");
+        return 1;
+    }
     int matrix[n][n];
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){
@@ -15,7 +19,7 @@ int main(){
             scanf("%d", &matrix[i][j]);
         }
     }
-    printf("Matrix: \n");
+    printf("\nMatrix: \n");
     for(int i = 0; i < n; i++){
         for(int j = 0; j < n; j++){
             printf("%d ", matrix[i][j]);
@@ -25,7 +29,7 @@ int main(){
     }
     float inv[n][n];
     if(inverse(n, matrix, inv)){
-        printf("Inversed matrix: \n");
+        printf("\nInversed matrix: \n");
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
                 printf("%.1f ", inv[i][j]);
@@ -89,7 +93,7 @@ int determinant(int n, int mat[n][n]){
 int inverse(int n, int mat[n][n], float inv[n][n]) {
     float det = (float)determinant(n, mat);
     if (det == 0) {
-        printf("Inversed matrix doesn`t exist");
+        printf("\nInversed matrix doesn`t exist");
         return 0;
     }
     int al[n][n];
